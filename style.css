@@ -20,6 +20,11 @@ body {
   overflow: hidden;
 }
 
+.modal-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
 .title-box {
   width: 100%;
   height: 20%;
@@ -39,42 +44,21 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 64px;
 }
 
-@media (max-width: 550px) {
-  .title-box__left-box {
-    gap: 34px;
-  }
-}
 .title-box__title-text {
-  font-size: 3.2em;
+  font-size: 7vh;
   font-weight: 500;
   color: white;
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-  .title-box__title-text {
-    font-size: 2em;
-  }
-}
-@media (max-width: 500px) {
-  .title-box__title-text {
-    font-size: 1.2em;
-  }
-}
 .title-box__description-text {
-  font-size: 2em;
+  font-size: 4vh;
   color: rgba(241, 241, 241, 0.5019607843);
+  padding-left: 3vw;
 }
 
-@media (max-width: 900px) {
-  .title-box__description-text {
-    font-size: 1em;
-    color: rgba(241, 241, 241, 0.5019607843);
-  }
-}
 .title-box__exit {
   text-align: center;
   display: flex;
@@ -107,12 +91,10 @@ body {
   overflow-y: scroll;
   padding: 0 9vw;
   padding-top: 2vw;
-  gap: 3vw;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: flex-start;
   -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
 }
 
 .more-than-eight::-webkit-scrollbar {
@@ -123,7 +105,6 @@ body {
   max-width: 100%;
   display: flex;
   padding: 0 9vw;
-  gap: 3vw;
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
@@ -132,7 +113,6 @@ body {
 .less-than-four {
   display: flex;
   padding: 0 9vw;
-  gap: 3vw;
   align-items: center;
   justify-content: center;
 }
@@ -140,10 +120,11 @@ body {
 .content__data-block {
   min-width: 18vw;
   max-width: 18vw;
+  margin: 1vw;
   height: 30vh;
   border-radius: 1vh;
   background: linear-gradient(#141A1E, rgba(20, 26, 30, 0.4156862745));
-  padding: 20px;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -151,11 +132,6 @@ body {
   transition: background-color 0.2s ease;
 }
 
-@media (max-width: 550px) {
-  .content__data-block {
-    padding: 10px;
-  }
-}
 .content__data-block-dark {
   background-color: rgba(20, 26, 30, 0.8);
 }
@@ -170,18 +146,19 @@ body {
   color: white;
   font-size: 2vw;
   display: flex;
-  gap: 0.1vw;
   font-weight: 600;
 }
 
 .content__data-block--dollar-sign {
   color: #ffbb00;
   font-weight: 600;
+  padding-right: 0.5vw;
 }
 
 .content__data-block--dollar-sign-green {
   color: #11ff00;
   font-weight: 600;
+  padding-right: 0.5vw;
 }
 
 .content__data-block--premium-img {
